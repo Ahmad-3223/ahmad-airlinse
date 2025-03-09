@@ -18,3 +18,17 @@ setInterval(() => {
         }
     });
 }, 5000);
+document.querySelector(".menu-toggle").addEventListener("click", function() {
+    document.querySelector(".nav-links").classList.toggle("active");
+});
+document.getElementById("ticket-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let from = document.getElementById("from").value;
+    let to = document.getElementById("to").value;
+    let date = document.getElementById("date").value;
+
+    document.getElementById("result").innerHTML = 
+        `Рейсы из ${from} в ${to} на дату ${date} найдены!`;
+});
+
+

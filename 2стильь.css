@@ -58,3 +58,47 @@ th, td {
     padding: 10px;
     border: 1px solid #ddd;
 }
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('images/airplane-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+}
+
+button {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #cc5500;
+    transform: scale(1.1);
+}
+.nav-links {
+    display: none;
+}
+
+.nav-links.active {
+    display: block;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+}
+
+
